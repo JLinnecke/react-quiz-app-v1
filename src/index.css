@@ -31,8 +31,75 @@ code {
   margin: 0 auto;
 }
 
+.quiz-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*  */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px 64px 16px 64px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 4rem;
+  box-shadow: 2px 10px 15px 3px #000000;
+}
+
+.question-headline {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .answer-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  margin-top: 5rem;
+}
+
+.correct {
+  background-color: green;
+  color: black;
+}
+
+.wrong {
+  background-color: red;
+  color: white;
+}
+
+.progress {
+  margin-top: 2.5rem;
+  display: flex;
+  text-align: left;
+  width: 100%;
+}
+
+.next-question {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.next-btn {
+  border-radius: 0;
+  width: 25%;
+  height: 50%;
+}
+
+.active {
+  border-radius: 0;
+  width: 25%;
+  height: 50%;
+  background-color: orange;
+}
+
+button {
+  border-radius: 16px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 2px 3px 5px 1px #000000;
 }
